@@ -9,6 +9,7 @@ CREATE TABLE propietari(
 );
 CREATE TABLE casa(
     ID_casa INT(6) PRIMARY KEY NOT NULL,
+    Indirizzo VARCHAR(30) NOT NULL,
     Codice_fiscale VARCHAR(16) NOT NULL,
     FOREIGN KEY (Codice_fiscale) REFERENCES propietari.Codice_fiscale
 );
